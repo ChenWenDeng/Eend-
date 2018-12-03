@@ -1,7 +1,7 @@
 <template>
     <div class="msite-container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark" >
-        <a class="navbar-brand" href="#">自营商城</a>
+        <a class="navbar-brand" href="#">Eend商城</a>
         <button
             class="navbar-toggler"
             type="button"
@@ -60,46 +60,51 @@
             <div class="bg-img"></div>
         </div>
         <div class="Advertisement">
-            <h1 class="title">Leading the fashion trend</h1>
+            <h1 class="title reveal-bottom">
+                <span class="reveal-right">Leading</span>
+                <span class="reveal-bottom">the</span>
+                <span class="reveal-bottom">fashion</span>
+                <span class="reveal-left">trend</span>
+            </h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="img-responsive" src="http://img3.fm.pop-fashion.com/fashion/fm/ad/20180625/12255b303fb1d7104.jpg" alt="">                </div>
+                        <img class="img-responsive reveal-top" src="http://back.zhayanwang.com/yingwangkeji/studio_src/1425900/201811271817539788.jpg" alt="">                </div>
                     <div class="swiper-slide">
-                        <img class="img-responsive"  src="http://img2.fm.pop-fashion.com/upload/flash_report/2018/2018112917/ANAREPORT_5bffadb55d5de_3978.jpg" alt="">
+                        <img class="img-responsive"  src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417957/201811271759202476.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="img-responsive" src="http://img3.fm.pop-fashion.com/upload/flash_report/2018/2018112915/ANAREPORT_5bff95cf9a0ca_9990.jpg" alt="">
+                        <img class="img-responsive" src="http://back.zhayanwang.com/yingwangkeji/studio_src/1362147/201811271757561033.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="img-responsive" src="http://img3.fm.pop-fashion.com/fashion/fm/ad/20180625/12255b303fb1d7104.jpg" alt="">
+                        <img class="img-responsive" src="http://back.zhayanwang.com/yingwangkeji/studio_src/379/201811271755466475.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="img-responsive" src="http://img2.fm.pop-fashion.com/upload/flash_report/2018/2018112917/ANAREPORT_5bffadb55d5de_3978.jpg" alt="">
+                        <img class="img-responsive" src="http://back.zhayanwang.com/yingwangkeji/studio_src/1362837/201811281832229701.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="img-responsive" src="http://img3.fm.pop-fashion.com/upload/flash_report/2018/2018112915/ANAREPORT_5bff95cf9a0ca_9990.jpg" alt="">
+                        <img class="img-responsive" src="http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811271753487916.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="jumbotron">
-            <h1 class="display-4">Hello,潮人们 </h1>
-            <p class="lead">这是一个汇集最新，最潮的时尚潮流服装在线网站</p>
+            <h1 class="display-4 reveal-top">Hello,潮人们 </h1>
+            <p class="lead reveal-right">这是一个汇集最新，最潮的时尚潮流服装在线网站</p>
             <hr class="my-4">
-            <p>Developed by Eend of the Post-90s Youtht</p>
+            <p class="reveal-bottom">Developed by Eend of the Post-90s Youtht</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg reveal-left" href="#" role="button">Learn more</a>
             </p>
         </div>
 
         <div class="classification">
             <div class="popular-container">
-                <h1 class="Popular-title">热门推荐</h1>
+                <h1 class="Popular-title reveal-top">热门推荐</h1>
                 <div class="Popular-text-box">
-                    <p>我不追随时尚，我本身就是时尚</p>
-                    <p>别随大流，不要让时尚左右你，而是自己去决定自己是什么样的，用自己的穿衣风格和生活方式来表达自己。</p>
+                    <p class="reveal-right">我不追随时尚，我本身就是时尚</p>
+                    <p class="reveal-left">别随大流，不要让时尚左右你，而是自己去决定自己是什么样的，用自己的穿衣风格和生活方式来表达自己。</p>
                 </div>
             </div>
             <div class="swiper-container-row">
@@ -155,63 +160,352 @@
                 </div>
             </div>   
         </div>
-        <div class="official-container">
-            <header>官方精选</header>
-            <div class="official-box">
-                <div class="img-box">
+
+
+        
+<!-- 官方============================================================== -->
+        <div class="official-container1">
+            <header>
+                <span class="reveal-right">官</span>
+                <span class="reveal-bottom">方</span>
+                <span class="reveal-top">精</span>
+                <span class="reveal-left">选</span>
+            </header>
+            <ul>
+                <li class="li-container reveal-right">
                     <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%A5%B0%E5%93%81.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top">
                     <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
                     <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right">
                     <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom">
                     <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF3.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top">
                     <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%971.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
                     <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF2.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right">
                     <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%973.jpg" alt="">
-                </div>
-            </div>
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom">
+                    <img src="//img2.selfimg.com.cn/vogue600h/2018/08/24/1535110368_qhnPc8.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
+                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                
+            </ul>
         </div>
-        <div class="brand-container">
-            <header>品牌精选</header>
-            <div class="brand-box">
-                <div class="img-box">
+
+<!-- 品牌============================================================== -->
+
+        <div class="brand-container1">
+            <header>
+                <span class="reveal-left">品</span>
+                <span class="reveal-top">牌</span>
+                <span class="reveal-right">精</span>
+                <span class="reveal-bottom">选</span>
+            </header>
+            <ul>
+                <li class="li-container reveal-right libox">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%A7%E8%A1%A3-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%A7%E8%A1%A3.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%A7%E8%A1%A3.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%96%E5%A5%97-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%96%E5%A5%97.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A4%96%E5%A5%97.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%92%88%E7%BB%87-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%92%88%E7%BB%87.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%92%88%E7%BB%87.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A1%AC%E8%A1%AB-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A1%AC%E8%A1%AB.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A1%AC%E8%A1%AB.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
-                </div>
-                <div class="img-box">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left">
                     <img onmouseover='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%BF%9E%E8%A1%A3%E8%A3%99-1.jpg"' onmouseout='src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%BF%9E%E8%A1%A3%E8%A3%99.jpg"' src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%BF%9E%E8%A1%A3%E8%A3%99.jpg" alt="">
-                </div>
-            </div>
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 女装============================================================== -->
+
+        <div class="female-container">
+            <header class="header-container">
+                <span class="reveal-right">潮</span>
+                <span class="reveal-bottom">流</span>
+                <span class="reveal-top">女</span>
+                <span class="reveal-left">装</span>
+            </header>
+            <ul>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%A5%B0%E5%93%81.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF3.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%971.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF2.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%973.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="//img2.selfimg.com.cn/vogue600h/2018/08/24/1535110368_qhnPc8.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="//img2.selfimg.com.cn/vogue600h/2018/08/24/1535110368_qhnPc8.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>   
+            </ul>
+        </div>
+
+
+    <!--  男装=========================================================  -->
+        <div class="male-container">
+            <header class="header-container">
+                <span class="reveal-right">潮</span>
+                <span class="reveal-bottom">流</span>
+                <span class="reveal-top">男</span>
+                <span class="reveal-left">装</span>
+            </header>
+            <ul>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%A5%B0%E5%93%81.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF3.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-top li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%971.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF2.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-right li-box">
+                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%973.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="//img2.selfimg.com.cn/vogue600h/2018/08/24/1535110368_qhnPc8.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-bottom li-box">
+                    <img src="//img2.selfimg.com.cn/vogue600h/2018/08/24/1535110368_qhnPc8.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>
+                <li class="li-container reveal-left li-box">
+                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                    <div class="Price-container">
+                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                        <p class="Price"><span>￥</span>122元</p>
+                    </div>
+                </li>   
+            </ul>
         </div>
     </div>
 </template>
@@ -219,10 +513,13 @@
 <script>
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css'
+import scrollReveal from 'scrollreveal';
 export default {
     data(){
         return{
             isMask: true,
+            scrollReveal: scrollReveal(),
+            
         }
     },
     methods:{
@@ -260,14 +557,87 @@ export default {
                     disableOnInteraction: false,//用户操作后也自动轮播
                 },
             })
-        })
+        }),
+        this.scrollReveal.reveal('.reveal-top', {
+            // 动画的时长
+            duration: 500,
+            // 延迟时间
+            delay: 500,
+            // 动画开始的位置，'bottom', 'left', 'top', 'right'
+            origin: 'top',
+            // 回滚的时候是否再次触发动画
+            reset: false,
+            // 在移动端是否使用动画
+            mobile: false,
+            // 滚动的距离，单位可以用%，rem等
+            distance: '200px',
+            // 其他可用的动画效果
+            opacity: 0.001,
+            easing: 'linear',
+            scale: 0.9,
+        });
+        this.scrollReveal.reveal('.reveal-bottom', {
+            // 动画的时长
+            duration: 500,
+            // 延迟时间
+            delay: 500,
+            // 动画开始的位置，'bottom', 'left', 'top', 'right'
+            origin: 'bottom',
+            // 回滚的时候是否再次触发动画
+            reset: false,
+            // 在移动端是否使用动画
+            mobile: false,
+            // 滚动的距离，单位可以用%，rem等
+            distance: '200px',
+            // 其他可用的动画效果
+            opacity: 0.001,
+            easing: 'linear',
+            scale: 0.9,
+        });
+        this.scrollReveal.reveal('.reveal-left', {
+            // 动画的时长
+            duration: 500,
+            // 延迟时间
+            delay: 500,
+            // 动画开始的位置，'bottom', 'left', 'top', 'right'
+            origin: 'left',
+            // 回滚的时候是否再次触发动画
+            reset: false,
+            // 在移动端是否使用动画
+            mobile: false,
+            // 滚动的距离，单位可以用%，rem等
+            distance: '200px',
+            // 其他可用的动画效果
+            opacity: 0.001,
+            easing: 'linear',
+            scale: 0.9,
+        });
+        this.scrollReveal.reveal('.reveal-right', {
+            // 动画的时长
+            duration: 500,
+            // 延迟时间
+            delay: 500,
+            // 动画开始的位置，'bottom', 'left', 'top', 'right'
+            origin: 'right',
+            // 回滚的时候是否再次触发动画
+            reset: false,
+            // 在移动端是否使用动画
+            mobile: false,
+            // 滚动的距离，单位可以用%，rem等
+            distance: '200px',
+            // 其他可用的动画效果
+            opacity: 0.001,
+            easing: 'linear',
+            scale: 0.9,
+        });
+        
     }
 }
 </script>
 
 <style lang="scss" scoped>
 .msite-container{
-    height: 3000px;
+    height: 5000px;
     .navbar{
         padding-top: 10px;
         padding-bottom: 10px; 
@@ -295,14 +665,17 @@ export default {
             margin: 1.875rem 0;
             color: #fff;
             font-size: 2.5rem;
+            span{
+                display: inline-block;
+            }
         }
         .swiper-container {
-            width: 90%;
-            // height: 18.75rem;
+            width: 95%;
+            height: 300px;
             
             .swiper-slide{
                 // width: 25rem;
-                width: 30%;
+                width: 33%;
                 // height: 18.75rem;
                 height: 100%;
                 background: none;
@@ -441,74 +814,287 @@ export default {
             }
         }
     }
-    .official-container{
+    .official-container1,.female-container,.male-container{
         width: 100%;
         padding: 50px;
-        background: #333;
+        background: #0e3342;
         margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        overflow: hidden;
+        span{
+            display: inline-block;
+        }
         header{
             width: 100%;
             padding-bottom: 30px;
             color: #ccc;
             font-size: 30px;
         }
-        .official-box{
+        ul{
             width: 90%;
+            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            .img-box{
-                width: 25%;
-                img{
-                    width: 100%;
+            padding:0;
+            li{
+                float:left; 
+                position:relative; 
+                margin:2px; 
+                position:relative; 
+                width:20%; 
+                min-height: 400px;
+                margin:0; 
+                padding:0; 
+                list-style:none;
+                img{ 
+                    width:100%; 
+                    height:100%;
+                    position:absolute; 
+                    top:0; 
+                    left:0; 
+                    display:block; 
+                    transition:all 400ms ease; 
+                    -moz-transition:all 400ms ease; 
+                    -webkit-transition:all 400ms ease; 
+                    -o-transition:all 400ms ease}
+                    
+                &.li-container img:hover{
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    transition: all .5s;
+                    border: 3px solid #aaa;
+                    box-shadow:0px 0px  10px 5px #aaa; 
+                    z-index:9999999
+                    
                 }
-            }
-            &.official-box img:hover{
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                transition: all .5s;
-                border: 3px solid #aaa;
-                box-shadow:0px 0px  10px 5px #aaa;
+                .Price-container{
+                    position: absolute;
+                    z-index: 1111;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background: rgba(51, 51, 51, 0.5);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .title{
+                        width: 200px;
+                        height: 20px;
+                        color: #fff;
+                        font-size: 16px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .Price{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin: 0;
+                        color: #fff;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                &.li-container:hover{
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    transition: all .5s;
+                    border: 3px solid #aaa;
+                    box-shadow:0px 0px  10px 5px #aaa; 
+                    z-index:9999999
+                }
             }
         }
     }
-    .brand-container{
+    .brand-container1{
         width: 100%;
         padding: 50px;
-        background: #0e3342;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow:0px 0px  15px 5px #000;
+        background: #333;
+        margin-top: 20px;
+        overflow: hidden;
+        span{
+            display: inline-block;
+        }
         header{
             width: 100%;
             padding-bottom: 30px;
-            color: #fff;
+            color: #ccc;
             font-size: 30px;
         }
-        .brand-box{
+        ul{
             width: 90%;
+            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            .img-box{
-                width: 25%;
-                img{
+            padding:0;
+            li{
+                float:left; 
+                position:relative; 
+                margin:2px; 
+                position:relative; 
+                width:25%; 
+                min-height: 400px;
+                margin:0; 
+                padding:0; 
+                list-style:none;
+                img{ 
+                    width:100%; 
+                    height:100%;
+                    position:absolute; 
+                    top:0; 
+                    left:0; 
+                    display:block; 
+                    transition:all 400ms ease; 
+                    -moz-transition:all 400ms ease; 
+                    -webkit-transition:all 400ms ease; 
+                    -o-transition:all 400ms ease}
+                &.li-container img:hover{
+                    -webkit-transform: scale(0.6.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    transition: all .8s;
+                    border: 3px solid #aaa;
+                    box-shadow:0px 0px  10px 5px #aaa;
+                    z-index:9999999
+                }
+                .Price-container{
+                    position: absolute;
+                    z-index: 1111;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                     width: 100%;
+                    padding: 10px;
+                    background: rgba(51, 51, 51, 0.5);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .title{
+                        width: 200px;
+                        height: 20px;
+                        color: #fff;
+                        font-size: 16px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .Price{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin: 0;
+                        color: #fff;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
-            &.brand-box img:hover{
-                -webkit-transform: scale(0.1.1);
-                -moz-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                transition: all .8s;
-                border: 3px solid #aaa;
-                box-shadow:0px 0px  10px 5px #aaa;
+        }
+    }
+    
+    .female-container{
+        width: 100%;
+        background: #000;
+        .header-container{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            padding: 2px;
+            border: 2px solid #fff;
+            margin: 30px auto;
+            color: #fff;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            .li-box{
+                width: 20%;
+                height: 100%;
+                margin: 15px;
+                &.li-box:nth-child(2){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(5){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(8){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(4){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(10){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(11){
+                    margin-top:50px;
+                }
+                &.li-box:hover{
+                    box-shadow:none;
+                }
+                &.li-box img:hover{
+                    box-shadow:none;
+                }
+            }
+        }
+    } 
+    .male-container{
+        background: #fff;
+        .header-container{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 2px;
+            border: 2px solid #000;
+            margin: 30px auto;
+            color: #000;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            background: #000;
+            .li-box{
+                width: 20%;
+                height: 100%;
+                margin: 15px;
+                &.li-box:nth-child(1){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(3){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(6){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(8){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(9){
+                    margin-top:50px;
+                }
+                &.li-box:nth-child(12){
+                    margin-top:50px;
+                }
+                &.li-box:hover{
+                    box-shadow:none;
+                }
+                &.li-box img:hover{
+                    box-shadow:none;
+                }
             }
         }
     }

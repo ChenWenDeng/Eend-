@@ -43,3 +43,10 @@ td,th{padding:0}
     box-sizing:border-box;
     font-size: 14px;
 }
+
+/*显示省略号*/
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
