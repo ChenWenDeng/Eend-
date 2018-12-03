@@ -2,6 +2,9 @@
 
 > A Vue.js project
 
+# 效果演示
+[查看请戳这里](https://chenwendeng.github.io/Eend-/index.html) > ( 请在pc端浏览 )
+
 ## Build Setup
 
 ``` bash
@@ -19,4 +22,4 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
- [demo](https://chenwendeng.github.io/Eend-/index.html)
+
