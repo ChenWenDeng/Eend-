@@ -90,8 +90,8 @@
         </div>
 
         <div class="jumbotron">
-            <h1 class="display-4 reveal-top">Hello,潮人们 </h1>
-            <p class="lead reveal-right">这是一个汇集最新，最潮的时尚潮流服装在线网站</p>
+            <h1 class="display-4 reveal-top">Eend商城——全球设计师原创服装平台</h1>
+            <p class="lead reveal-right">Eend商城汇聚了全球原创服装设计师作品的设计与展示，是国内新一代设计师原创服装电商平台，集设计师时尚产品销售展示、品牌推广于一体，致力于为都市女性提供高性价比的原创设计服装品牌及个性潮流服装，帮助并引导终端用户找到与自身气质品味相匹配的原创时装</p>
             <hr class="my-4">
             <p class="reveal-bottom">Developed by Eend of the Post-90s Youtht</p>
             <p class="lead">
@@ -507,6 +507,39 @@
                 </li>   
             </ul>
         </div>
+        <!--- ========================  footer  ============================-->
+        <div class="footer">
+            <div class="header-container">
+                <h2>Eend商城</h2>
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">招聘信息</a></li>
+                    <li><a href="">法律声明</a></li>
+                </ul>
+            </div>
+            <div class="bottom-container">
+                <ul>
+                    <li>
+                        <p>地址：中国特别经济开发市深圳市福田</p>
+                        <p>邮编：100020</p>
+                        <p>总机：(8610)17620445033</p>
+                    </li>
+                    <li>
+                        <p><a href="">京ICP证070512号</a></p>
+                        <p><a href="">深圳市公安局朝阳分局备案编号：11010502582098</a></p>
+                        <p><a href="">信息网络传播视听节目许可证0115826号</a></p>
+                        <p><a href="">广播电视节目制作经营许可证（京）字第1587号</a></p>
+                    </li>
+                    <li>
+                        <p>Copyright © 2006-2018 Yoka.com, All rights reserved.</p>
+                        <p>Eend商城 版权所有</p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -639,8 +672,8 @@ export default {
 .msite-container{
     height: 5000px;
     .navbar{
-        padding-top: 10px;
-        padding-bottom: 10px; 
+        padding-top: 20px;
+        padding-bottom: 20px; 
         background: #000!important;
         color: #fff!important;
     }
@@ -1094,6 +1127,66 @@ export default {
                 }
                 &.li-box img:hover{
                     box-shadow:none;
+                }
+            }
+        }
+    }
+    .footer{
+        width:100%;
+        background: #000;
+        padding: 40px 0 10px 0;
+        .header-container{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            color: #fff;
+            h2{
+                width: 30%;
+                padding: 20px;
+            }
+            ul{
+                width: 70%;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    list-style-type:none;
+                    a{
+                        text-decoration: none;
+                        color: #ccc;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .bottom-container{
+            width: 80%;
+            margin: 0 auto;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                justify-items: center;
+                padding: 0;
+                li{
+                    width: 33%;
+                    list-style-type:none;
+                    color: #ccc;
+                    padding-left: 15px;
+                    p{
+                        font-size: 14px;
+                        a{
+                            text-decoration: none;
+                            color: #cccc;
+                        }
+                        a:hover{
+                            color: #fff;
+                        }
+                    }
                 }
             }
         }
