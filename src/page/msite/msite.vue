@@ -1,61 +1,8 @@
 <template>
     <div class="msite-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark" >
-        <a class="navbar-brand" href="#">Eend商城</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">登录
-                <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">注册</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">个人中心</a>
-                <a class="dropdown-item" href="#">购物车</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">积分商城</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">在线客服</a>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-            >
-            <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-        </nav>
+        <!--================== header  ===================-->
+        <headerTop/>
+         <!--================== header  ===================-->
         <div class="bg-container">
             <div class="bg-img"></div>
         </div>
@@ -173,11 +120,13 @@
             </header>
             <ul>
                 <li class="li-container reveal-right">
-                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%A5%B0%E5%93%81.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E9%A5%B0%E5%93%81.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-top">
                     <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
@@ -508,46 +457,22 @@
             </ul>
         </div>
         <!--- ========================  footer  ============================-->
-        <div class="footer">
-            <div class="header-container">
-                <h2>Eend商城</h2>
-                <ul>
-                    <li><a href="">关于我们</a></li>
-                    <li><a href="">联系我们</a></li>
-                    <li><a href="">合作伙伴</a></li>
-                    <li><a href="">招聘信息</a></li>
-                    <li><a href="">法律声明</a></li>
-                </ul>
-            </div>
-            <div class="bottom-container">
-                <ul>
-                    <li>
-                        <p>地址：中国经济开发市深圳市福田</p>
-                        <p>邮编：105820</p>
-                        <p>总机：(8610)17620445033</p>
-                    </li>
-                    <li>
-                        <p><a href="">京ICP证070512号</a></p>
-                        <p><a href="">深圳市公安局朝阳分局备案编号：11010502582098</a></p>
-                        <p><a href="">信息网络传播视听节目许可证0115826号</a></p>
-                        <p><a href="">广播电视节目制作经营许可证（京）字第1587号</a></p>
-                    </li>
-                    <li>
-                        <p>Copyright © 2006-2018 Yoka.com, All rights reserved.</p>
-                        <p>Eend商城 版权所有</p>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <Footer/>
     </div>
 </template>
 
 <script>
+import headerTop from '../../components/headerTop/headerTop'
+import Footer from '../../components/footer/footer'
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css'
-import scrollReveal from 'scrollreveal';
+import scrollReveal from 'scrollreveal'
 export default {
+    name:'msite',
+    components:{
+        headerTop,
+        Footer,
+    },
     data(){
         return{
             isMask: true,
@@ -590,7 +515,7 @@ export default {
                     disableOnInteraction: false,//用户操作后也自动轮播
                 },
             })
-        }),
+        })
         this.scrollReveal.reveal('.reveal-top', {
             // 动画的时长
             duration: 500,
@@ -1127,66 +1052,6 @@ export default {
                 }
                 &.li-box img:hover{
                     box-shadow:none;
-                }
-            }
-        }
-    }
-    .footer{
-        width:100%;
-        background: #000;
-        padding: 40px 0 10px 0;
-        .header-container{
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
-            margin: 0 auto;
-            color: #fff;
-            h2{
-                width: 30%;
-                padding: 20px;
-            }
-            ul{
-                width: 70%;
-                padding: 20px;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                li{
-                    list-style-type:none;
-                    a{
-                        text-decoration: none;
-                        color: #ccc;
-                    }
-                    a:hover{
-                        color: #fff;
-                    }
-                }
-            }
-        }
-        .bottom-container{
-            width: 80%;
-            margin: 0 auto;
-            ul{
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                justify-items: center;
-                padding: 0;
-                li{
-                    width: 33%;
-                    list-style-type:none;
-                    color: #ccc;
-                    padding-left: 15px;
-                    p{
-                        font-size: 14px;
-                        a{
-                            text-decoration: none;
-                            color: #cccc;
-                        }
-                        a:hover{
-                            color: #fff;
-                        }
-                    }
                 }
             }
         }
