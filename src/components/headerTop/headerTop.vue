@@ -16,9 +16,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">登录
+                <router-link class="nav-link" tag="a" to="/login">
+                <!-- <a class="nav-link" href="#">登录 -->
+                    登录
                 <span class="sr-only">(current)</span>
-                </a>
+                </router-link>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">注册</a>

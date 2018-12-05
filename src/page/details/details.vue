@@ -23,8 +23,11 @@
                     <span class="iconfont icon-jia"></span>
                 </div>
                 <div class="button-container">
-                    <button class="btn btn-danger">立即购买</button>
-                    <button class="btn btn-primary">加入购物车</button>
+                    <button class="btn btn-danger">加入购物车</button>
+                    <router-link class="btn btn-primary" tag="button" to="/login">
+                        <!-- <button class="btn btn-primary">加入购物车</button> -->
+                        立即购买
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -85,7 +88,6 @@ export default {
 
 <style lang="scss" scoped>
     .details-container{
-        height: 3000px;
         width: 100%;
         .navbar{
             padding-top: 1.25rem;
