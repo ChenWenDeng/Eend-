@@ -18,13 +18,17 @@
                 <h5 class="title">[简约的翻领设计]LuckyOzasec女士灯笼袖珍珠装饰后抽绳侧开叉毛呢外套S68328 珊瑚杏仁色 S</h5>
                 <p class="price-container"><span class="price-title">价格：</span><span class="price"><i>￥</i>399</span></p>
                 <div class="number-container">
-                    <span class="iconfont icon-jian"></span>
+                    <!-- <span class="iconfont icon-jian"></span>
                     <input type="text" placeholder="1">
-                    <span class="iconfont icon-jia"></span>
+                    <span class="iconfont icon-jia"></span> -->
+                    <el-input-number v-model="num1" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                 </div>
                 <div class="button-container">
-                    <button class="btn btn-danger">加入购物车</button>
-                    <router-link class="btn btn-primary" tag="button" to="/login">
+                    <router-link class="btn btn-danger" tag="button" to="/login">
+                        <!-- <button class="btn btn-danger">加入购物车</button> -->
+                        立即购买
+                    </router-link>
+                    <router-link class="btn btn-primary" tag="button" to="/order">
                         <!-- <button class="btn btn-primary">加入购物车</button> -->
                         立即购买
                     </router-link>
@@ -62,6 +66,7 @@ export default {
     },
     data() {
         return {
+            num1: 1,
             imgUrl: [
                 { index:1, url: 'http://ecimg.happigo.com/data/upload/shop/store/goods/1/495/247995/1_05968192462761649_1280.jpg' },
                 { index:2, url: 'http://ecimg.happigo.com/data/upload/shop/store/goods/1/495/247995/1_05968192477717937_1280.jpg' },
@@ -80,7 +85,10 @@ export default {
         //点击小图片时将图片路径赋值给大图
         getIndex(imgUrl){
             this.ImgUrl = imgUrl;
-        }
+        },
+        handleChange(value) {
+            console.log(value);
+        }
     },
     
 }
@@ -89,12 +97,6 @@ export default {
 <style lang="scss" scoped>
     .details-container{
         width: 100%;
-        .navbar{
-            padding-top: 1.25rem;
-            padding-bottom: 1.25rem; 
-            background: #000!important;
-            color: #fff!important;
-        }
         .goodDetails-container{
             width: 90%;
             padding: 3.125rem;

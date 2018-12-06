@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Msite from '../page/msite/msite'
 import Details from '../page/details/details'
 import Login from '../page/login/login'
+import Order from '../page/order/order'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: Order
     }
   ]
 })

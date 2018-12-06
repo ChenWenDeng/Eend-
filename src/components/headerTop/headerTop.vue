@@ -1,71 +1,60 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark" >
-        <a class="navbar-brand" href="#">Eend商城</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <router-link class="nav-link" tag="a" to="/login">
-                <!-- <a class="nav-link" href="#">登录 -->
-                    登录
-                <span class="sr-only">(current)</span>
-                </router-link>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">注册</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">个人中心</a>
-                <a class="dropdown-item" href="#">购物车</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">积分商城</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">在线客服</a>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-            >
-            <button class="btn btn-outline-success  my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+  <div class="nav-container">
+  <el-menu
+    :default-active="activeIndex"
+    class="el-menu-demo nav-box"
+    mode="horizontal"
+    @select="handleSelect"
+  >     
+        <el-menu-item index="99"><h1>Eend商城</h1></el-menu-item>
+        <el-menu-item index="1">登录</el-menu-item>
+        <el-menu-item index="2">注册</el-menu-item>
+        <el-menu-item index="3">我的订单</el-menu-item>
+        <el-submenu index="4">
+        <template slot="title">个人中心</template>
+        <el-menu-item index="4-1">购物车</el-menu-item>
+        <el-menu-item index="4-2">积分商城</el-menu-item>
+        <el-menu-item index="4-3">我的会员</el-menu-item>
+        </el-submenu>
+        <el-menu-item index="5" disabled>在线客服</el-menu-item>
+        <el-input class="input-container"
+            placeholder="请输入内容"
+            v-model="input10"
+            clearable>
+        </el-input>
+        <el-button class="search-btn" type="success">搜索</el-button>
+  </el-menu>
+   </div>
 </template>
 
 <script>
 export default {
-    name: 'headerTop'
-}
+    name: "headerTop",
+    data() {
+      return {
+        activeIndex: '1',
+        activeIndex2: '1',
+        input10: ''
+      };
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
+};
 </script>
 
 
-<style>
+<style lang="scss" scoped>
+.nav-box{
+    background: #000;
+    padding: 30px;
+    .input-container{
+        width: 20%;
+        margin-top:10px;
+        margin-left: 28%;
+    }
+}
 
 </style>

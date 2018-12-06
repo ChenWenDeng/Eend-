@@ -129,67 +129,85 @@
                     </router-link>
                 </li>
                 <li class="li-container reveal-top">
-                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%A5%97%E5%A4%B4.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-left">
-                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E8%A3%A4%E5%AD%90.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-right">
-                    <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/18%E5%86%AC%E5%93%81%E7%B1%BB%E5%85%A5%E5%8F%A3-%E5%8D%8A%E8%A3%99.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-bottom">
-                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF3.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF3.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-top">
-                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%971.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%971.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-left">
-                    <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF2.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/%E7%8E%8B%E7%9C%9F%E5%84%BF2.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-right">
-                    <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%973.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="https://pic.lily.sh.cn/%E7%B4%AB%E5%A4%96%E5%85%89%E7%B3%BB%E5%88%973.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-bottom">
-                    <img src="http://back.zhayanwang.com/yingwangkeji/studio/1378691/201712131625327433.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>122元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="http://back.zhayanwang.com/yingwangkeji/studio/1378691/201712131625327433.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>122元</p>
+                        </div>
+                    </router-link>
                 </li>
                 <li class="li-container reveal-left">
-                    <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
-                    <div class="Price-container">
-                        <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
-                        <p class="Price"><span>￥</span>123元</p>
-                    </div>
+                    <router-link tag="a" target="_blank" to="/details">
+                        <img src="http://back.zhayanwang.com/yingwangkeji/studio_src/1417886/201809211335136823.jpg" alt="">
+                        <div class="Price-container">
+                            <p class="title ellipsis">秋冬女款萝莉风复古麻花毛球宽松毛衣</p>
+                            <p class="Price"><span>￥</span>123元</p>
+                        </div>
+                    </router-link>
                 </li>
                 
             </ul>
