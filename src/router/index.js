@@ -4,6 +4,8 @@ import Msite from '../page/msite/msite'
 import Details from '../page/details/details'
 import Login from '../page/login/login'
 import Order from '../page/order/order'
+import Register from '../page/register/register'
+import Shopping from '../page/shopping/shopping'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/order',
       name: 'order',
       component: Order
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
+    },
+    {
+      path: '/shopping',
+      name: 'shopping',
+      component: Shopping
     }
   ]
 })

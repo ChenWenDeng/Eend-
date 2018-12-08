@@ -247,7 +247,15 @@ export default {
         },
         //删除对应下标的数组
         deleteData(index){
-            this.lists.splice(index,1);
+            if(this.lists.length>1){
+                this.lists.splice(index,1);
+            }else{
+                this.$notify({
+                    title: '警告',
+                    message: '至少有一个收件地址',
+                    type: 'warning'
+                });
+            }
         }
         
     },

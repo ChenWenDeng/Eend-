@@ -24,9 +24,9 @@
                     <el-input-number v-model="num1" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
                 </div>
                 <div class="button-container">
-                    <router-link class="btn btn-danger" tag="button" to="/login">
+                    <router-link class="btn btn-danger" tag="button" to="/shopping">
                         <!-- <button class="btn btn-danger">加入购物车</button> -->
-                        立即购买
+                        加入购物车
                     </router-link>
                     <router-link class="btn btn-primary" tag="button" to="/order">
                         <!-- <button class="btn btn-primary">加入购物车</button> -->

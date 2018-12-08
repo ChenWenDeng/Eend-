@@ -6,9 +6,21 @@
     mode="horizontal"
     @select="handleSelect"
   >     
-        <el-menu-item index="99"><h1>Eend商城</h1></el-menu-item>
-        <el-menu-item index="1">登录</el-menu-item>
-        <el-menu-item index="2">注册</el-menu-item>
+        <el-menu-item index="99">
+          <router-link to="/" tag="h1">
+            Eend商城
+          </router-link>
+        </el-menu-item>
+        <el-menu-item index="1">
+          <router-link to="/login" tag="span">
+            登录
+          </router-link>
+        </el-menu-item>
+        <el-menu-item index="2">
+          <router-link to="/Register" tag="span">
+            注册
+          </router-link>
+        </el-menu-item>
         <el-menu-item index="3">我的订单</el-menu-item>
         <el-submenu index="4">
         <template slot="title">个人中心</template>
