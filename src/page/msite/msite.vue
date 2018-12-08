@@ -45,12 +45,14 @@
                     <div class="swiper-slide" v-for="(popular,index) in dataList" :key="index">
                         <div class="item col-lg-12 col-sm-4 col-xs-6">
                             <div class="dtl31">
-                                <img :src="popular.urlImg">
-                                <div class="dtl">
-                                    <h3>{{popular.title}}</h3>
-                                    <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
-                                    <a href="#">Read More</a>
-                                </div>
+                                <router-link tag="a" target="_blank" to="/details">
+                                    <img :src="popular.urlImg">
+                                    <div class="dtl">
+                                        <h3>{{popular.title}}</h3>
+                                        <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                </router-link>
                             </div>
                         </div>
                     </div>
