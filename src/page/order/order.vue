@@ -142,7 +142,9 @@
                 </ul>
                 <div class="price-container">
                     <span>应付总额：￥399</span>
-                    <button class="btn btn-lg btn-primary">提交订单</button>
+                    <button @click="Order" class="btn btn-primary">
+                        提交订单
+                    </button>
                 </div>
             </div>
         </div>
@@ -255,6 +257,13 @@ export default {
                     message: '至少有一个收件地址',
                     type: 'warning'
                 });
+            }
+        },
+        Order(){
+            if(this.lists.length==0){
+                this.$message.error('请填写收件地址');
+            }else{
+                this.$router.push({path:'/payment'});
             }
         }
         

@@ -6,6 +6,7 @@ import Login from '../page/login/login'
 import Order from '../page/order/order'
 import Register from '../page/register/register'
 import Shopping from '../page/shopping/shopping'
+import Payment from '../page/payment/payment'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/shopping',
       name: 'shopping',
       component: Shopping
+    },
+    {
+      path: '/payment',
+      name: 'payment',
+      component: Payment
     }
   ]
 })
