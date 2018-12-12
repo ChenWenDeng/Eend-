@@ -23,12 +23,11 @@ export default {
     data(){
         return{
             number:null,
-            money:500
         }
     },
     methods:{
         payment(){
-            if(this.number!=500){
+            if(this.number!=399){
                 this.$notify({
                     title: '警告',
                     message: '金额不正确,请重新输入',

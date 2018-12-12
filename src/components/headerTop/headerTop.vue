@@ -23,7 +23,11 @@
         </el-menu-item>
         <el-menu-item index="3">我的订单</el-menu-item>
         <el-submenu index="4">
-        <template slot="title">个人中心</template>
+        <template slot="title">
+          <router-link to="/personal" tag="span">
+            个人中心
+          </router-link>
+        </template>
         <el-menu-item index="4-1">购物车</el-menu-item>
         <el-menu-item index="4-2">积分商城</el-menu-item>
         <el-menu-item index="4-3">我的会员</el-menu-item>

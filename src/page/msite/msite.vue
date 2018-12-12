@@ -71,7 +71,7 @@
                 <span class="reveal-left">选</span>
             </header>
             <ul>
-                <li class="li-container reveal-right" v-for="(official,index) in officials" :key="index">
+                <li class="li-container reveal-top" v-for="(official,index) in officials" :key="index">
                     <router-link tag="a" target="_blank" to="/details">
                         <img :src="official.urlImg" alt="">
                         <div class="Price-container">

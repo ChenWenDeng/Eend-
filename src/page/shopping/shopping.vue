@@ -24,7 +24,8 @@
                         <td class="count"><span class="reduce"><i v-show="goods.num>1" @click="reduce(index)">-</i></span><input class="count-input" type="text" v-model="goods.num"/><span class="add" @click="add(index)">+</span></td>
                         <td class="subtotal">{{goods.price*goods.num}}</td>
                         <!-- <td class="operation"><span class="delete" @click="del(index)">删除</span></td> -->
-                        <td class="operation"><span class="delete btn btn-danger" @click="dialogVisible = true">删除</span></td>
+                        <!-- <td class="operation"><span class="delete btn btn-danger" @click="dialogVisible = true;" >删除</span></td> -->
+                        <td class="operation"><span class="delete btn btn-danger" @click="dele(index)" >删除</span></td>
                     </tr>
                     <tr class="total-box">
                         <td  colspan="5" >
@@ -44,7 +45,7 @@
             <span>确定删除吗？</span>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false">取 消</el-button>
-                <el-button type="primary" @click="del(index);dialogVisible = false" >
+                <el-button type="primary" @click="del();dialogVisible = false" >
                     确 定
                 </el-button>
             </span>
@@ -66,6 +67,7 @@ export default {
         return{
             allChecked:true,//全选状态,
             dialogVisible: false,
+            indexs: null,
             goodsList:[
                        {    id:1,
                             urlImg:'http://p3.vanclimg.com/232/232/product/6/3/7/6373824/mid/6373824-1j201709151927089726.jpg',
@@ -113,8 +115,12 @@ export default {
         reduce(index){
             this.goodsList[index].num--
         },
-        del(index){
-            this.goodsList.splice(index,1)
+        dele(index){
+            this.dialogVisible = true
+            this.indexs = index
+        },
+        del(){
+            this.goodsList.splice(this.indexs,1)
         },
         handleClose(done) {
             this.$confirm('确认关闭？')

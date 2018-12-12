@@ -9,14 +9,17 @@ import Router from 'vue-router'
 // import Payment from '../page/payment/payment'
 
 
-const msite = () => import('../page/msite/msite')
-const details = () => import('../page/details/details')
-const login = () => import('../page/login/login')
-const order = () => import('../page/order/order')
-const register = () => import('../page/register/register')
-const shopping = () => import('../page/shopping/shopping')
-const payment = () => import('../page/payment/payment')
-
+const msite = () => import('../page/msite/msite')  //首页
+const details = () => import('../page/details/details')  //详情页
+const login = () => import('../page/login/login') //登录页
+const order = () => import('../page/order/order') //订单页
+const register = () => import('../page/register/register') //注册页
+const shopping = () => import('../page/shopping/shopping') //购物车
+const payment = () => import('../page/payment/payment') //支付
+const personal = () => import('../page/personal/personal') //个人中心
+const personalOrders = () => import('../page/personal/orders/orders')
+const personalAccount = () => import('../page/personal/account/account')
+const personalAddress = () => import('../page/personal/address/address')
 
 Vue.use(Router)
 
@@ -56,6 +59,29 @@ export default new Router({
       path: '/payment',
       name: 'payment',
       component: payment
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: personal,
+      children:[
+        {
+          path:'/personal/orders',
+          component: personalOrders
+        },
+        {
+          path:'/personal/account',
+          component: personalAccount
+        },
+        {
+          path:'/personal/address',
+          component: personalAddress
+        },
+        {
+          path: '',
+          redirect: '/personal/orders'
+        }
+      ]
     }
   ]
 })
