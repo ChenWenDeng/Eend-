@@ -1,0 +1,2 @@
+webpackJsonp([8],{gZaS:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("\n   account。。。\n")])},staticRenderFns:[]};var c=t("VU/8")({name:"account"},a,!1,function(e){t("jyBS")},"data-v-488dddbf",null);n.default=c.exports},jyBS:function(e,n){}});
+//# sourceMappingURL=8.6dceef74a6dfa3611501.js.map
