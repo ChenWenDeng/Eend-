@@ -4,7 +4,7 @@
         </div>
         <div class="login-box">
             <div class="header-container">
-                <img src="http://img0.imgtn.bdimg.com/it/u=2914299315,3896554771&fm=26&gp=0.jpg" alt="">
+                <img src="http://img5.imgtn.bdimg.com/it/u=2205424427,3655026688&fm=26&gp=0.jpg" alt="">
                 <p>使用 Eend 账号 登录官网</p>
             </div>
             <!-- <div class="input-container">

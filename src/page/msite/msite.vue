@@ -71,7 +71,7 @@
                 <span class="reveal-left">选</span>
             </header>
             <ul>
-                <li class="li-container reveal-top" v-for="(official,index) in officials" :key="index">
+                <li class="li-container" :class="'reveal-'+official.direction" v-for="(official,index) in officials" :key="index">
                     <router-link tag="a" target="_blank" to="/details">
                         <img :src="official.urlImg" alt="">
                         <div class="Price-container">
@@ -177,7 +177,7 @@
                 <span class="reveal-left">装</span>
             </header>
             <ul>
-                <li class="li-container reveal-right li-box" v-for="(female,index) in females" :key="index">
+                <li class="li-container li-box" :class="'reveal-'+female.direction" v-for="(female,index) in females" :key="index">
                     <router-link target="_blank" to="/details">
                         <img :src="female.urlImg" alt="">
                         <div class="Price-container">
@@ -199,7 +199,7 @@
                 <span class="reveal-left">装</span>
             </header>
             <ul>
-                <li class="li-container reveal-right li-box" v-for="(male, index) in males" :key="index">
+                <li class="li-container li-box" :class="'reveal-'+male.direction" v-for="(male, index) in males" :key="index">
                     <router-link target="_blank" to="/details">
                         <img :src="male.urlImg" alt="">
                         <div class="Price-container">
@@ -231,6 +231,7 @@ export default {
         return{
             isMask: true,
             scrollReveal: scrollReveal(),
+						/*****  轮播广告   ******/
             swipers:[
                 {
                         id: 1,
@@ -253,6 +254,7 @@ export default {
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811271753487916.jpg'
                 }
             ],
+						/*****  热门推荐   ******/
             dataList:[
                     {
                         id: 1,
@@ -285,34 +287,40 @@ export default {
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1425536/201811211337511445.jpg'
                     }
             ],
+						/*****  官方精选   ******/
             officials:[
                     {
                         id: 1,
                         title: '粉红缇花针织夹克外套',
                         Price:453,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201514384322.jpg'
                     },
                     {
                         id: 2,
                         title: '2018冬季新款大翻领连帽过膝中长款羊毛呢外套 格子复古加厚大衣"',
                         Price:212,
+												direction: 'bottom',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1362837/201811261706295673.jpg'
                     },
                     {
                         id: 3,
                         title: '条纹衬衫女2018秋装新款港味chic长袖衬衣宽松时尚刺绣显瘦气质',
                         Price:321,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/704/201809111150203138.jpg'
                     },
                     {
                         id: 4,
                         Price:543,
+												direction: 'left',
                         title: '冬款加绒加厚保暖刺绣字母连帽卫衣裙连衣裙',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811281518297307.jpg'
                     },
                     {
                         id: 5,
                         Price:670,
+												direction: 'right',
                         title: 'HOWL设计师品牌 灰色曲线门襟短款连帽羽绒服DJ1404',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/31/201811091416578390.jpg'
                     },
@@ -320,111 +328,131 @@ export default {
                         id: 6,
                         title: '女款常青藤复古学院风格格子衬衫流苏衬衣',
                         Price:657,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811242023526858.jpg'
                     },
                     {
                         id: 7,
                         title: '冬季女款真毛领外套加厚棉服短款棉衣连帽大毛领棉袄',
                         Price:755,
+												direction: 'right',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811251406155590.jpg'
                     },
                     {
                         id: 8,
                         title: '绿领带酒红色针织外套',
                         Price:645,
+												direction: 'left',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201508473547.jpg'
                     },
                     {
                         id: 9,
                         Price:865,
+												direction: 'top',
                         title: 'TOGETHERLIMITED国潮设计 街头复古燕子图案刺绣燕尾拼接新款卫衣',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1425536/201811151436314841.jpg'
                     },
                     {
                         id: 10,
                         Price:787,
+												direction: 'bottom',
                         title: '冬季新款宽松棉服女白蓝拼接连帽面包服连帽外套加厚学生外套',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1362837/201811261749195372.jpg'
                     }
             ],
+						/*****  女装   ******/
             females:[
                     {
                         id: 1,
                         title: 'HOWL设计师品牌 螺纹翻领毛呢格纹大衣外套BZ1529',
                         Price:674,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/31/201811091325411725.jpg'
                     },
                     {
                         id: 2,
                         title: '秋冬女式中长款宽松百搭连帽格子衬衫外套衬衣',
                         Price:252,
+												direction: 'left',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811291118523086.jpg'
                     },
                     {
                         id: 3,
                         title: '冬季复古格子校园风格细格子呢子大衣毛呢外套',
                         Price:321,
+												direction: 'right',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811281317135800.jpg'
                     },
                     {
                         id: 4,
                         Price:598,
                         title: '安妮陈秋冬女装宽松束口袖针织衫',
+												direction: 'bottom',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/421/201811291711140533.jpg'
                     },
                     {
                         id: 5,
                         Price:460,
                         title: 'THUSA',
+												direction: 'right',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1414553/201806051037184394.jpg'
                     },
                     {
                         id: 6,
                         title: '女款常青藤复古学院风格格子衬衫流苏衬衣',
                         Price:657,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1381199/201811242023526858.jpg'
                     },
                     {
                         id: 7,
                         title: '流线蜻蜓黑色高领长版毛衣',
                         Price:755,
-                        urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201506151138.jpg'
+												direction: 'left',
+                        urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201506151138.jpg',
                     },
                     {
                         id: 8,
                         title: '大蝴蝶结浅灰色针织外套',
                         Price:645,
+												direction: 'bottom',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201502310814.jpg'
                     } 
             ],
+						/*****  男装   ******/
             males:[
                 {
                         id: 1,
                         title: 'HOWL设计师品牌 橘色曲线纹衬衫羽绒服DJ1496',
                         Price:674,
+												direction: 'bottom',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/31/201811091201239185.jpg'
                     },
                     {
                         id: 2,
                         title: '编织罗纹黑色毛衣',
                         Price:252,
+												direction: 'right',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1426686/201811201511173709.jpg'
                     },
                     {
                         id: 3,
                         title: '冬季新款棉服女透明口袋宽松面包服连帽外套潮粉色学生外套',
                         Price:321,
+												direction: 'top',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/1362837/201811261808379894.jpg'
                     },
                     {
                         id: 4,
                         Price:598,
+												direction: 'left',
                         title: '潮流印花卫衣',
                         urlImg: 'http://back.zhayanwang.com/yingwangkeji/studio_src/421/201811291711140533.jpg'
                     },
                     {
                         id: 5,
                         Price:460,
+												direction: 'top',
                         title: '宝蓝菱格纹系带开衫',
                         urlImg: 'http://images.iwinking.com/imgs/studio/434/201511251456501403.jpg'
                     },
@@ -432,18 +460,21 @@ export default {
                         id: 6,
                         title: '黑色长裙',
                         Price:657,
+												direction: 'right',
                         urlImg: 'http://images.iwinking.com/imgs/upload/201505111222193374.jpg'
                     },
                     {
                         id: 7,
                         title: '2015秋冬预售拼接撞色大衣',
                         Price:755,
+												direction: 'top',
                         urlImg: 'http://images.iwinking.com/imgs/upload/201506041700112821.jpg'
                     },
                     {
                         id: 8,
                         title: '长款修身双排扣露肩女收腰外套大衣风衣',
                         Price:645,
+												direction: 'bottom',
                         urlImg: 'http://images.iwinking.com/imgs/studio/1360568/201611021726345848.jpg'
                     } 
             ]
@@ -453,8 +484,27 @@ export default {
     methods:{
         displayMask(index){
                 this.isMask = !this.isMask
-
-        }
+        },
+				animations(direc,direction){
+					this.scrollReveal.reveal(direc,{
+							// 动画的时长
+							duration: 500,
+							// 延迟时间
+							delay: 500,
+							// 动画开始的位置，'bottom', 'left', 'top', 'right'
+							origin: direction,
+							// 回滚的时候是否再次触发动画
+							reset: false,
+							// 在移动端是否使用动画
+							mobile: false,
+							// 滚动的距离，单位可以用%，rem等
+							distance: '200px',
+							// 其他可用的动画效果
+							opacity: 0.001,
+							easing: 'linear',
+							scale: 0.9,
+					});
+				}
     },
     mounted(){
         this.$nextTick(function(){
@@ -486,79 +536,10 @@ export default {
                 },
             })
         })
-        this.scrollReveal.reveal('.reveal-top', {
-            // 动画的时长
-            duration: 500,
-            // 延迟时间
-            delay: 500,
-            // 动画开始的位置，'bottom', 'left', 'top', 'right'
-            origin: 'top',
-            // 回滚的时候是否再次触发动画
-            reset: false,
-            // 在移动端是否使用动画
-            mobile: false,
-            // 滚动的距离，单位可以用%，rem等
-            distance: '200px',
-            // 其他可用的动画效果
-            opacity: 0.001,
-            easing: 'linear',
-            scale: 0.9,
-        });
-        this.scrollReveal.reveal('.reveal-bottom', {
-            // 动画的时长
-            duration: 500,
-            // 延迟时间
-            delay: 500,
-            // 动画开始的位置，'bottom', 'left', 'top', 'right'
-            origin: 'bottom',
-            // 回滚的时候是否再次触发动画
-            reset: false,
-            // 在移动端是否使用动画
-            mobile: false,
-            // 滚动的距离，单位可以用%，rem等
-            distance: '200px',
-            // 其他可用的动画效果
-            opacity: 0.001,
-            easing: 'linear',
-            scale: 0.9,
-        });
-        this.scrollReveal.reveal('.reveal-left', {
-            // 动画的时长
-            duration: 500,
-            // 延迟时间
-            delay: 500,
-            // 动画开始的位置，'bottom', 'left', 'top', 'right'
-            origin: 'left',
-            // 回滚的时候是否再次触发动画
-            reset: false,
-            // 在移动端是否使用动画
-            mobile: false,
-            // 滚动的距离，单位可以用%，rem等
-            distance: '200px',
-            // 其他可用的动画效果
-            opacity: 0.001,
-            easing: 'linear',
-            scale: 0.9,
-        });
-        this.scrollReveal.reveal('.reveal-right', {
-            // 动画的时长
-            duration: 500,
-            // 延迟时间
-            delay: 500,
-            // 动画开始的位置，'bottom', 'left', 'top', 'right'
-            origin: 'right',
-            // 回滚的时候是否再次触发动画
-            reset: false,
-            // 在移动端是否使用动画
-            mobile: false,
-            // 滚动的距离，单位可以用%，rem等
-            distance: '200px',
-            // 其他可用的动画效果
-            opacity: 0.001,
-            easing: 'linear',
-            scale: 0.9,
-        });
-        
+				this.animations('.reveal-top','top')
+				this.animations('.reveal-bottom','bottom')
+				this.animations('.reveal-left','left')
+				this.animations('.reveal-right','right') 
     }
 }
 </script>

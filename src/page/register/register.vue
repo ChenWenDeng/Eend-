@@ -4,7 +4,7 @@
         </div>
         <div class="login-box">
             <div class="header-container">
-                <img src="http://img0.imgtn.bdimg.com/it/u=2914299315,3896554771&fm=26&gp=0.jpg" alt="">
+                <img src="http://img5.imgtn.bdimg.com/it/u=2205424427,3655026688&fm=26&gp=0.jpg" alt="">
                 <p>欢迎注册 Eend商城 账号 </p>
             </div>
             <div class="input-container">
@@ -110,7 +110,7 @@ export default {
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4196414752,1624495291&fm=26&gp=0.jpg);
+        background-image: url(http://img5.imgtn.bdimg.com/it/u=3806838678,3106817667&fm=26&gp=0.jpg);
         background-size: 100% 100%;
         z-index: -1;
     }
