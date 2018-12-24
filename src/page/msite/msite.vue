@@ -71,13 +71,14 @@
                 <span class="reveal-left">选</span>
             </header>
             <ul>
-                <li class="li-container" :class="'reveal-'+official.direction" v-for="(official,index) in officials" :key="index">
-                    <router-link tag="a" target="_blank" to="/details">
-                        <img :src="official.urlImg" alt="">
-                        <div class="Price-container">
-                            <p class="title ellipsis">{{official.title}}</p>
-                            <p class="Price"><span>￥</span>{{official.Price}}元</p>
-                        </div>
+                <li class="li-container"  v-for="(official,index) in officials" :key="index">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545673988607&di=8962fc9d9d9cff7acb85fd6681cae8a7&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01aa2a5715ffc932f8758c9b594176.gif" alt="">
+                    <router-link tag="a" target="_blank" to="/details" :class="'reveal-'+official.direction">
+											<img v-lazy="official.urlImg" alt="">
+                      <div class="Price-container">
+                        <p class="title ellipsis">{{official.title}}</p>
+                        <p class="Price"><span>￥</span>{{official.Price}}元</p>
+                      </div>
                     </router-link>
                 </li>
             </ul>
@@ -177,9 +178,10 @@
                 <span class="reveal-left">装</span>
             </header>
             <ul>
-                <li class="li-container li-box" :class="'reveal-'+female.direction" v-for="(female,index) in females" :key="index">
+                <li class="li-container li-box" v-for="(female,index) in females" :key="index">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545673988607&di=8962fc9d9d9cff7acb85fd6681cae8a7&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01aa2a5715ffc932f8758c9b594176.gif" alt="">
                     <router-link target="_blank" to="/details">
-                        <img :src="female.urlImg" alt="">
+                        <img v-lazy="female.urlImg" alt="" :class="'reveal-'+female.direction">
                         <div class="Price-container">
                             <p class="title ellipsis">{{female.title}}</p>
                             <p class="Price"><span>￥</span>{{female.Price}}元</p>
@@ -746,10 +748,9 @@ export default {
             flex-wrap: wrap;
             padding: 10px;
             li{
+								position:relative; 
                 float:left; 
-                position:relative; 
                 margin:2px; 
-                position:relative; 
                 width:20%; 
                 min-height: 400px;
                 margin:0; 
@@ -778,6 +779,11 @@ export default {
                     z-index:9999999
                     
                 }
+								&.li-container a{
+									display: block; 
+									width: 100%; 
+									height:100%;
+								}
                 .Price-container{
                     position: absolute;
                     z-index: 1111;
