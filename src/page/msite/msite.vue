@@ -16,7 +16,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" v-for="(swiper, index) in swipers" :key="index">
-                        <img class="img-responsive " :src="swiper.urlImg" alt="">
+                        <img class="img-responsive " v-lazy="swiper.urlImg" alt="">
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                         <div class="item col-lg-12 col-sm-4 col-xs-6">
                             <div class="dtl31">
                                 <router-link tag="a" target="_blank" to="/details">
-                                    <img :src="popular.urlImg">
+                                    <img v-lazy="popular.urlImg">
                                     <div class="dtl">
                                         <h3>{{popular.title}}</h3>
                                         <p>Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.</p>
@@ -179,7 +179,7 @@
             </header>
             <ul>
                 <li class="li-container li-box" v-for="(female,index) in females" :key="index">
-									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545673988607&di=8962fc9d9d9cff7acb85fd6681cae8a7&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01aa2a5715ffc932f8758c9b594176.gif" alt="">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545679602822&di=3c4d368e00495cfa30868f858ea89878&imgtype=0&src=http%3A%2F%2Fimg.mukewang.com%2F55ac9c550001b5f004000220.gif" alt="">
                     <router-link target="_blank" to="/details">
                         <img v-lazy="female.urlImg" alt="" :class="'reveal-'+female.direction">
                         <div class="Price-container">
@@ -201,9 +201,10 @@
                 <span class="reveal-left">装</span>
             </header>
             <ul>
-                <li class="li-container li-box" :class="'reveal-'+male.direction" v-for="(male, index) in males" :key="index">
-                    <router-link target="_blank" to="/details">
-                        <img :src="male.urlImg" alt="">
+                <li class="li-container li-box"  v-for="(male, index) in males" :key="index">
+										<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545678090464&di=f1f01b61d4ac2661faa607454e6fe8c2&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ce7f5b34f5aba80120b959da4bab.gif" alt="">
+                    <router-link target="_blank" to="/details" >
+                        <img :src="male.urlImg" alt="" :class="'reveal-'+male.direction">
                         <div class="Price-container">
                             <p class="title ellipsis">{{male.title}}</p>
                             <p class="Price"><span>￥</span>{{male.Price}}元</p>
